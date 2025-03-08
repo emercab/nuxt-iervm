@@ -5,11 +5,11 @@
   <header
     class="relative h-screen bg-cover bg-center"
     style="
-      background-image: url('https://source.unsplash.com/1600x900/?university,students');
+      background-image: url('/img/ie-valle-meza-01-.jpg');
     "
   >
     <div
-      class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center"
+      class="absolute inset-0 bg-green-900/85 flex items-center justify-center"
     >
       <div class="text-center text-white">
         <h1 class="text-4xl md:text-6xl font-bold">
