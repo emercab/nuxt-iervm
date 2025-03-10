@@ -10,7 +10,9 @@
 <template>
   <AppTopbar />
 
-  <AppNavbar />
+  <AppHeader>
+    <AppNavbar />
+  </AppHeader>
 
   <slot />
 

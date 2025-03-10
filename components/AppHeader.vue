@@ -1,48 +1,8 @@
-<script setup lang="ts">
-  const { heroImage = false } = defineProps<{
-    heroImage?: boolean;
-  }>();
-
-  const headerClasses = computed(() => ({
-    'relative h-dvh bg-cover bg-center': heroImage,
-    'h-auto': !heroImage,
-  }));
-
-  const headerStyles = computed(() => ({
-    backgroundImage: heroImage
-      ? 'url(public/img/ie-valle-meza-01-.jpg)'
-      : 'none',
-  }));
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <!-- Hero Section -->
-  <header
-    :class="headerClasses"
-    :style="headerStyles"
-  >
-    <div
-      class="absolute inset-0 bg-emerald-900/85 flex items-center justify-center"
-    >
-      <div class="text-center text-white">
-        <h1 class="text-4xl md:text-6xl font-bold">
-          Inspiration, Innovation and Discovery
-        </h1>
-        <p class="mt-4 text-lg">La mejor educación para alcanzar el éxito.</p>
-        <div class="mt-6">
-          <a
-            href="#"
-            class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700"
-            >Inscribirse</a
-          >
-          <a
-            href="#"
-            class="bg-red-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-red-700 ml-4"
-            >Más información</a
-          >
-        </div>
-      </div>
-    </div>
+  <header>
+    <slot />
   </header>
 </template>
 

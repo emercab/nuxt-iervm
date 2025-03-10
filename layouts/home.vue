@@ -1,9 +1,20 @@
-<script setup></script>
+<script setup>
+  useHead({
+    titleTemplate: (title) =>
+      title
+        ? `${title} - Institución Educativa Rafael Valle Meza`
+        : 'Institución Educativa Rafael Valle Meza',
+  });
+</script>
 
 <template>
   <AppTopbar />
 
-  <AppNavbar />
+  <AppHeader>
+    <AppNavbar />
+    
+    <HeroImage />
+  </AppHeader>
 
   <slot />
 
