@@ -1,5 +1,10 @@
 <script setup>
-  
+  useHead({
+    titleTemplate: (title) =>
+      title
+        ? `${title} - Institución Educativa Rafael Valle Meza`
+        : 'Institución Educativa Rafael Valle Meza',
+  });
 </script>
 
 <template>
@@ -11,7 +16,3 @@
 
   <AppFooter />
 </template>
-
-<style scoped>
-
-</style>

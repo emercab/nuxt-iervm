@@ -1,7 +1,10 @@
-<script setup></script>
+<script setup>
+  definePageMeta({
+    title: 'Inicio',
+    layout: 'home',
+  });
+</script>
 
-<template>
-  <AppHeader />
-</template>
+<template></template>
 
 <style scoped></style>
