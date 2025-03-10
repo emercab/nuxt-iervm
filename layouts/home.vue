@@ -3,7 +3,7 @@
     titleTemplate: (title) =>
       title
         ? `${title} - Institución Educativa Rafael Valle Meza`
-        : 'Institución Educativa Rafael Valle Meza',
+        : "Institución Educativa Rafael Valle Meza",
   });
 </script>
 
@@ -11,9 +11,11 @@
   <AppTopbar />
 
   <AppHeader>
-    <AppNavbar />
-    
-    <HeroImage />
+    <HeroImageContainer>
+      <AppNavbar />
+
+      <HeroImage />
+    </HeroImageContainer>
   </AppHeader>
 
   <slot />

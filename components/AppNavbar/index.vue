@@ -8,7 +8,7 @@
 
 <template>
   <!-- Navbar -->
-  <nav class="top-0 w-full bg-blue-300 backdrop-blur-lg shadow-md">
+  <nav class="relative top-0 w-full bg-white/50 shadow-md z-50">
     <div class="container mx-auto flex justify-between items-center px-4 py-2">
       <!-- Logo -->
       <AppNavbarLogo>IE Rafael Valle Meza</AppNavbarLogo>
